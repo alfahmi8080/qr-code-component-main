@@ -4,34 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <title>Front End Mentor QR Code</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     <!-- css class for body and centering div-->
     <style>
-        body{
+        body {
             width: 1440px;
             margin: 0;
-            background-color: hsl(212, 45%, 89%) ;
+            background-color: hsl(212, 45%, 89%);
         }
-
-        .outer{
+    
+        .outer {
             background-color: hsl(0, 0%, 100%);
             width: 275px;
             padding: 10px 10px 10px 10px;
             border: 10px hsl(220, 15%, 55%);
             border-radius: 5%;
         }
-
-        img{
+    
+        img {
             border: 10px hsl(218, 44%, 22%);
             border-radius: 5%;
             width: 275px;
         }
+    
+        .inner {
+            width: 275;
+        }
+
+        p{
+            font-family: ;
+            color: hsl(220, 15%, 55%);
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        h2{
+            font-family: ;
+            font-weight: 700;
+        }
     </style>
 
-    <title>Front End Mentor QR Code</title>
 </head>
 <body>
     <div class="outer">        
             <img src="images/image-qr-code.png">
+            <div class="inner">
+                <h2>Improve your front-end skills by building projects</h2>
+                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+            </div>
     </div>
 </body>
 </html>
