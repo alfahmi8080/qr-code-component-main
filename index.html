@@ -6,7 +6,7 @@
     
     <title>Front End Mentor QR Code</title>
     <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
-    <!-- css class for body and centering div-->
+    
     <style>
         @font-face {
             font-family: Outfit ;
@@ -14,10 +14,12 @@
         }
 
         body {
-            width: 1440px;
-            margin: 0;
+            height: 100vh;
+            width: 100vw;
             background-color: hsl(212, 45%, 89%);
             font-family: outfit;
+            display: grid;
+            place-items: center;
         }
     
         .outer {
@@ -35,7 +37,8 @@
         }
     
         .inner {
-            width: 275;
+            width: 275px;
+            text-align: center;
         }
 
         p{
@@ -44,19 +47,28 @@
             font-weight: 400;
         }
 
-        h2{
-            font-weight: 700;
-        }
+        .attribution { font-size: 11px; text-align: center; }
+        .attribution a { color: hsl(228, 45%, 44%); }
+
     </style>
 
 </head>
 <body>
-    <div class="outer">        
-            <img src="images/image-qr-code.png">
+    <main>
+        <div class="outer">
+            <img src="images/image-qr-code.png" alt="frontendmentor.io QR Code">
             <div class="inner">
-                <h2>Improve your front-end skills by building projects</h2>
-                <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+                <article>
+                    <h2 style="font-weight: 700;">Improve your front-end skills by building projects</h2>
+                    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+                </article>
             </div>
+        </div>
+    </main>
+    
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://www.frontendmentor.io/profile/alfahmi8080">alfahmi8080</a>.
     </div>
 </body>
 </html>
